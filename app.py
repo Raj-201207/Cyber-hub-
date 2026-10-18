@@ -60,6 +60,6 @@ def process_print():
     file.save(os.path.join('uploads', filename))
     return jsonify({'message': 'ফাইল জমা হয়েছে! পেমেন্ট কনফার্ম হলে প্রিন্ট দেবো'})
 
-    if __name__ == '__main__':
-    port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=port)
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
